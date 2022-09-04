@@ -1,6 +1,7 @@
 {
   "name": "project-template-next.js",
   "private": true,
+  "homepage": "https://jobbher.no/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
