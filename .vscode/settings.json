@@ -1,0 +1,9 @@
+{
+    "blueprint.templatesPath": [
+        "./templates",
+        "./packages/web/templates"
+      ],
+      "editor.codeActionsOnSave": {
+        "source.fixAll": true
+      }
+}
