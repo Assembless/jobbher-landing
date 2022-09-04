@@ -1,7 +1,7 @@
 // Dependencies scoped imports
+import React from 'react';
 import { useTheme } from '@mui/material';
 import { useRouter } from 'next/router';
-import React from 'react';
 
 // Project scoped imports
 

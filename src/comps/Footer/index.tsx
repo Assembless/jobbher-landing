@@ -1,7 +1,6 @@
 // Dependencies scoped imports
 import React from 'react';
-import { Box, Container, IconButton, Link } from '@mui/material';
-import { useTheme } from '@emotion/react';
+import { Box, Container, IconButton, Link, useTheme } from '@mui/material';
 import { sectionsMap, TLink, TSection } from './linksMap';
 
 // Project scoped imports
