@@ -1,5 +1,6 @@
 {
-  "name": "@project-hardwork/web",
+  "name": "jobbher",
+  "homepage": "https://jobbher.no/",
   "version": "0.0.0",
   "private": true,
   "scripts": {
