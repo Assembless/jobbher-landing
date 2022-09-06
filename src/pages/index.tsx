@@ -205,7 +205,7 @@ const Home: NextPage = () => {
                 max: 464,
                 min: 0,
               },
-              items: 1,
+              items: 2,
               partialVisibilityGutter: 30,
             },
             tablet: {
@@ -257,7 +257,7 @@ const Home: NextPage = () => {
                 max: 464,
                 min: 0,
               },
-              items: 1,
+              items: 2,
               partialVisibilityGutter: 30,
             },
             tablet: {
@@ -286,14 +286,14 @@ const Home: NextPage = () => {
           centerMode={false}
           className=""
           containerClass="container-with-dots"
-          customTransition="all 15s linear"
+          customTransition="all 8s linear"
           dotListClass=""
           draggable
           infinite
           itemClass=""
           keyBoardControl
           minimumTouchDrag={80}
-          pauseOnHover
+          // pauseOnHover
           responsive={{
             desktop: {
               breakpoint: {
@@ -308,7 +308,7 @@ const Home: NextPage = () => {
                 max: 464,
                 min: 0,
               },
-              items: 1,
+              items: 2,
               partialVisibilityGutter: 30,
             },
             tablet: {
@@ -316,7 +316,7 @@ const Home: NextPage = () => {
                 max: 1024,
                 min: 464,
               },
-              items: 3,
+              items: 4,
               partialVisibilityGutter: 30,
             },
           }}
@@ -349,12 +349,12 @@ const Facebook = ({ el, reverse }: { el: TFbEl; reverse?: boolean }) => {
             cursor: `pointer`,
           }}
         >
-          <Box sx={{ height: 130, overflow: `hidden` }}>
+          <Box sx={{ maxHeight: 110, overflow: `hidden` }}>
             <img
               // eslint-disable-next-line global-require
               src="/facebook-group-bg.jpg"
               alt="standing person"
-              style={{ width: `100%` }}
+              style={{ width: `100%`, height: `100%` }}
             />
           </Box>
           <Box
