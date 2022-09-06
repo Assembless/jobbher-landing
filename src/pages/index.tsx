@@ -38,14 +38,7 @@ const responsive = {
 };
 const Home: NextPage = () => {
   const theme = useTheme();
-  const isSmDown = useMediaQuery(theme.breakpoints.down(`lg`));
-  const [activeSlide1, setActiveSlide1] = React.useState(0);
-  const [activeSlide2, setActiveSlide2] = React.useState(0);
-  const [activeSlide3, setActiveSlide3] = React.useState(0);
 
-  React.useEffect(() => {
-    window.FB.XFBML.parse();
-  }, []);
   return (
     <Page
       title="Project Hardwork"

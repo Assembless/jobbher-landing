@@ -10,14 +10,6 @@ const Document = () => (
       <meta name="theme-color" content="#005CBD" />
     </Head>
     <body>
-      <div id="fb-root" />
-      <script
-        async
-        defer
-        crossOrigin="anonymous"
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0"
-        nonce="CrisBYA4"
-      />
       <Main />
       <NextScript />
     </body>

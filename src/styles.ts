@@ -1,4 +1,4 @@
-import { styled, ButtonBase, AppBar } from '@mui/material';
+import { styled, AppBar } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const StyledRoot = styled(AppBar)(() => ({
