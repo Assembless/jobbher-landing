@@ -5,6 +5,7 @@ import {
   Button,
   Container,
   Grid,
+  Hidden,
   IconButton,
   Link,
   Typography,
@@ -50,99 +51,116 @@ const Home: NextPage = () => {
         sx={{
           display: `flex`,
           flexDirection: `column`,
-          justifyContent: `center`,
-          maxHeight: `calc(100vh-103.5px)`,
+          height: `calc(100vh - 103.5px)`,
         }}
         component="section"
       >
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" sx={{ height: `100%` }}>
           <Box
-            sx={{
-              display: `flex`,
-              alignItems: `center`,
-            }}
+            sx={{ display: `flex`, flexDirection: `column`, height: `100%` }}
           >
-            <Box sx={{ /* paddingBottom: `103px`, */ width: `50%` }}>
-              <Typography
-                variant="h1"
-                sx={{
-                  fontSize: `84px`,
-                  color: theme.palette.primary.shade?.[50],
-                  marginBottom: `8px`,
-                }}
-              >
-                Ny{` `}
-                <Typography
-                  variant="h1"
-                  variantMapping={{ h1: `span` }}
-                  sx={{
-                    fontSize: `84px`,
-                    color: theme.palette.primary.shade?.[30],
-                  }}
-                >
-                  jobbportal
-                </Typography>
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: `28px`,
-                  color: theme.palette.primary.shade?.[50],
-                }}
-              >
-                Vi kommer snart..
-              </Typography>
-              <Box sx={{ display: `flex`, gap: `4px` }}>
-                <Link href="https://www.facebook.com/JobbHer.no">
-                  <IconButton /* sx={{ padding: 0 }} */>
-                    <StyledIcon
-                      sx={{ color: theme.palette.primary.shade?.[40] }}
-                      icon={[`fab`, `facebook`]}
-                    />
-                  </IconButton>
-                </Link>
-                {/* <Link href="http://google.com"> */}
-                <IconButton disabled>
-                  <StyledIcon
-                    sx={{ color: theme.palette[`neutral-variant`].shade?.[80] }}
-                    icon={[`fab`, `linkedin`]}
-                  />
-                </IconButton>
-                {/* </Link> */}
-                {/* <Link href="http://google.com"> */}
-                <IconButton /* sx={{ padding: 0 }} */ disabled>
-                  <StyledIcon
-                    sx={{ color: theme.palette[`neutral-variant`].shade?.[70] }}
-                    icon={[`fab`, `twitter`]}
-                  />
-                </IconButton>
-                {/* </Link> */}
-              </Box>
-            </Box>
             <Box
               sx={{
-                width: `50%`,
                 display: `flex`,
-                justifyContent: `center`,
-                maxHeight: `calc(100vh-103.5px)`,
+                alignItems: `center`,
+                flex: 1,
               }}
             >
-              <img
-                src="/team-members.svg"
-                alt="jobbher-screenshot"
-                style={{ height: `100%`, maxHeight: `550px` }}
-              />
+              <Box sx={{ /* paddingBottom: `103px`, */ flex: 1 }}>
+                <Typography
+                  variant="h1"
+                  sx={{
+                    fontSize: { xs: `66px`, sm: `84px` },
+                    color: theme.palette.primary.shade?.[50],
+                    marginBottom: `8px`,
+                  }}
+                >
+                  Ny{` `}
+                  <Typography
+                    variant="h1"
+                    variantMapping={{ h1: `span` }}
+                    sx={{
+                      fontSize: { xs: `66px`, sm: `84px` },
+                      color: theme.palette.primary.shade?.[30],
+                    }}
+                  >
+                    jobbportal
+                  </Typography>
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: { xs: `24px`, sm: `28px` },
+                    color: theme.palette.primary.shade?.[50],
+                  }}
+                >
+                  Vi kommer snart..
+                </Typography>
+                <Box
+                  sx={{
+                    display: `flex`,
+                    gap: `4px`,
+                    marginBottom: { xs: `32px` },
+                  }}
+                >
+                  <Link href="https://www.facebook.com/JobbHer.no">
+                    <IconButton /* sx={{ padding: 0 }} */>
+                      <StyledIcon
+                        sx={{ color: theme.palette.primary.shade?.[40] }}
+                        icon={[`fab`, `facebook`]}
+                      />
+                    </IconButton>
+                  </Link>
+                  {/* <Link href="http://google.com"> */}
+                  <IconButton disabled>
+                    <StyledIcon
+                      sx={{
+                        color: theme.palette[`neutral-variant`].shade?.[80],
+                      }}
+                      icon={[`fab`, `linkedin`]}
+                    />
+                  </IconButton>
+                  {/* </Link> */}
+                  {/* <Link href="http://google.com"> */}
+                  <IconButton /* sx={{ padding: 0 }} */ disabled>
+                    <StyledIcon
+                      sx={{
+                        color: theme.palette[`neutral-variant`].shade?.[70],
+                      }}
+                      icon={[`fab`, `twitter`]}
+                    />
+                  </IconButton>
+                  {/* </Link> */}
+                </Box>
+              </Box>
+              <Box
+                sx={{
+                  flex: 1,
+                  justifyContent: `center`,
+                  maxHeight: `calc(100vh-103.5px)`,
+                  display: { md: `flex`, xs: `none` },
+                }}
+              >
+                <img
+                  src="/team-members.svg"
+                  alt="jobbher-screenshot"
+                  style={{ height: `100%`, maxHeight: `550px` }}
+                />
+              </Box>
+            </Box>
+            <Box sx={{ paddingBottom: `16px` }}>
+              <Typography
+                sx={{
+                  fontSize: `14px`,
+                  color: theme.palette.primary.shade?.[30],
+                  textAlign: `center`,
+                }}
+              >
+                Vi er i gang med å lage en ny jobbportal for deg som er på
+                utkikk etter jobb eller arbeidsgiver som er på utkikk etter
+                arbeidskraft.
+              </Typography>
             </Box>
           </Box>
-          <Typography
-            sx={{
-              fontSize: `14px`,
-              color: theme.palette.primary.shade?.[30],
-              textAlign: `center`,
-            }}
-          >
-            Vi er i gang med å lage en ny jobbportal for deg som er på utkikk
-            etter jobb eller arbeidsgiver som er på utkikk etter arbeidskraft.
-          </Typography>
         </Container>
       </Box>
       <Box component="section" sx={{ padding: `72px 0 72px 0` }}>
@@ -195,7 +213,7 @@ const Home: NextPage = () => {
                 max: 1024,
                 min: 464,
               },
-              items: 2,
+              items: 4,
               partialVisibilityGutter: 30,
             },
           }}
@@ -247,7 +265,7 @@ const Home: NextPage = () => {
                 max: 1024,
                 min: 464,
               },
-              items: 2,
+              items: 4,
               partialVisibilityGutter: 30,
             },
           }}
@@ -298,7 +316,7 @@ const Home: NextPage = () => {
                 max: 1024,
                 min: 464,
               },
-              items: 2,
+              items: 3,
               partialVisibilityGutter: 30,
             },
           }}
