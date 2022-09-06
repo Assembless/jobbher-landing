@@ -24,7 +24,7 @@ const Logo = ({ sx, classes, ...rootProps }: LogoProps) => {
       onClick={() => router.replace(`/`)}
       {...rootProps}
     >
-      <StyledMessage className={classes?.message} gutterBottom>
+      <StyledMessage className={classes?.message}>
         <span style={{ color: theme.palette.primary.shade?.[50] }}>
           JOBBHER
         </span>
