@@ -190,7 +190,7 @@ const Home: NextPage = () => {
           itemClass=""
           keyBoardControl
           minimumTouchDrag={80}
-          pauseOnHover
+          // pauseOnHover
           responsive={{
             desktop: {
               breakpoint: {
@@ -242,7 +242,7 @@ const Home: NextPage = () => {
           itemClass=""
           keyBoardControl
           minimumTouchDrag={80}
-          pauseOnHover
+          // pauseOnHover
           responsive={{
             desktop: {
               breakpoint: {
@@ -349,7 +349,7 @@ const Facebook = ({ el, reverse }: { el: TFbEl; reverse?: boolean }) => {
             cursor: `pointer`,
           }}
         >
-          <Box sx={{ maxHeight: 110, overflow: `hidden` }}>
+          <Box sx={{ maxHeight: { xs: 95, sm: 110 }, overflow: `hidden` }}>
             <img
               // eslint-disable-next-line global-require
               src="/facebook-group-bg.jpg"
@@ -376,6 +376,7 @@ const Facebook = ({ el, reverse }: { el: TFbEl; reverse?: boolean }) => {
                     textAlign: `center`,
                     marginLeft: `6px`,
                     width: `fit-content`,
+                    fontSize: { xs: 11, sm: 13.3 },
                   }}
                 >
                   {el.name}
@@ -395,16 +396,16 @@ const Facebook = ({ el, reverse }: { el: TFbEl; reverse?: boolean }) => {
                   icon={[`fab`, `facebook`]}
                   style={{
                     color: theme.palette.primary.shade?.[100],
-                    fontSize: `16px`,
                   }}
                 />
                 <Typography
-                  variant="h6"
+                  variant="h5"
                   sx={{
                     color: theme.palette.primary.shade?.[100],
                     textAlign: `center`,
                     marginLeft: `6px`,
                     width: `fit-content`,
+                    fontSize: { xs: 11, sm: 13.3 },
                   }}
                 >
                   {el.name}
