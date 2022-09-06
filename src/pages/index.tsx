@@ -14,8 +14,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Carousel from 'react-multi-carousel';
 import Page from '../comps/Page';
-import { facebookList, TFbEl } from './fb';
-import { StyledIcon } from './styles';
+import { facebookList, TFbEl } from '../fb';
+import { StyledIcon } from '../styles';
 import 'react-multi-carousel/lib/styles.css';
 
 /* const fbGroupBg = require(`/jobbher-screenshot.jpg`); */
