@@ -9,5 +9,5 @@ export const StyledRoot = styled(Box)(() => ({
 export const StyledMessage = styled(Typography)(() => ({
   fontFamily: `'Poppins', sans-serif`,
   fontSize: `30px`,
-  fontWeight: `600`,
+  fontWeight: `700`,
 }));

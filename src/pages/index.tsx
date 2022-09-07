@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                 <Typography
                   variant="h1"
                   sx={{
-                    fontSize: { xs: `66px`, sm: `84px` },
+                    fontSize: { xs: `58px`, sm: `84px` },
                     color: theme.palette.primary.shade?.[50],
                     marginBottom: `8px`,
                   }}
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
                     variant="h1"
                     variantMapping={{ h1: `span` }}
                     sx={{
-                      fontSize: { xs: `66px`, sm: `84px` },
+                      fontSize: { xs: `58px`, sm: `84px` },
                       color: theme.palette.primary.shade?.[30],
                     }}
                   >
