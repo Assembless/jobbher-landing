@@ -1,7 +1,6 @@
 // Dependencies scoped imports
 import React from 'react';
 import { Box, Container, IconButton, Link, useTheme } from '@mui/material';
-import { sectionsMap, TLink, TSection } from './linksMap';
 
 // Project scoped imports
 
@@ -9,15 +8,11 @@ import { sectionsMap, TLink, TSection } from './linksMap';
 import {
   StyledRoot,
   StyledIcon,
-  StyledLinkTxt,
   StyledMainWrapper,
-  StyledSectionTitle,
   StyledSubtitle,
   StyledTitle,
   StyledTitleWithSocialBox,
-  StyledLinkBox,
   StyledSocialIconsBox,
-  StyledSectionBox,
 } from './styles';
 import { FooterProps } from './types';
 
@@ -44,22 +39,22 @@ const Footer = ({ sx, classes, ...rootProps }: FooterProps) => {
                   <StyledIcon icon={[`fab`, `facebook`]} />
                 </IconButton>
               </Link>
-              {/* <Link href="http://google.com"> */}
-              <IconButton disabled>
-                <StyledIcon
-                  sx={{ color: theme.palette[`neutral-variant`].shade?.[70] }}
-                  icon={[`fab`, `linkedin`]}
-                />
-              </IconButton>
-              {/* </Link> */}
-              {/* <Link href="http://google.com"> */}
-              <IconButton /* sx={{ padding: 0 }} */ disabled>
-                <StyledIcon
-                  sx={{ color: theme.palette[`neutral-variant`].shade?.[70] }}
-                  icon={[`fab`, `twitter`]}
-                />
-              </IconButton>
-              {/* </Link> */}
+              <Link href="https://linkedin.com/company/jobb-her-no">
+                <IconButton>
+                  <StyledIcon
+                    sx={{ color: theme.palette[`neutral-variant`].shade?.[70] }}
+                    icon={[`fab`, `linkedin`]}
+                  />
+                </IconButton>
+              </Link>
+              <Link href="https://twitter.com/JOBBHER_NO">
+                <IconButton /* sx={{ padding: 0 }} */>
+                  <StyledIcon
+                    sx={{ color: theme.palette[`neutral-variant`].shade?.[70] }}
+                    icon={[`fab`, `twitter`]}
+                  />
+                </IconButton>
+              </Link>
             </StyledSocialIconsBox>
           </StyledTitleWithSocialBox>
         </StyledMainWrapper>

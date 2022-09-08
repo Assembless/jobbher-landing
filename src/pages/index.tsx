@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Carousel from 'react-multi-carousel';
-import Page from '../comps/Page';
+import Page from '../components/Page';
 import { facebookList, TFbEl } from '../fb';
 import { StyledIcon } from '../styles';
 import 'react-multi-carousel/lib/styles.css';
@@ -83,26 +83,26 @@ const Home: NextPage = () => {
                       />
                     </IconButton>
                   </Link>
-                  {/* <Link href="http://google.com"> */}
-                  <IconButton disabled>
-                    <StyledIcon
-                      sx={{
-                        color: theme.palette[`neutral-variant`].shade?.[80],
-                      }}
-                      icon={[`fab`, `linkedin`]}
-                    />
-                  </IconButton>
-                  {/* </Link> */}
-                  {/* <Link href="http://google.com"> */}
-                  <IconButton /* sx={{ padding: 0 }} */ disabled>
-                    <StyledIcon
-                      sx={{
-                        color: theme.palette[`neutral-variant`].shade?.[70],
-                      }}
-                      icon={[`fab`, `twitter`]}
-                    />
-                  </IconButton>
-                  {/* </Link> */}
+                  <Link href="http://linkedin.com/company/jobb-her-no">
+                    <IconButton>
+                      <StyledIcon
+                        sx={{
+                          color: theme.palette[`neutral-variant`].shade?.[80],
+                        }}
+                        icon={[`fab`, `linkedin`]}
+                      />
+                    </IconButton>
+                  </Link>
+                  <Link href="https://twitter.com/JOBBHER_NO">
+                    <IconButton /* sx={{ padding: 0 }} */>
+                      <StyledIcon
+                        sx={{
+                          color: theme.palette[`neutral-variant`].shade?.[70],
+                        }}
+                        icon={[`fab`, `twitter`]}
+                      />
+                    </IconButton>
+                  </Link>
                 </Box>
               </Box>
               <Box
