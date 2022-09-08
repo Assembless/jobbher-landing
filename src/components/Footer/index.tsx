@@ -42,7 +42,7 @@ const Footer = ({ sx, classes, ...rootProps }: FooterProps) => {
               <Link href="https://linkedin.com/company/jobb-her-no">
                 <IconButton>
                   <StyledIcon
-                    sx={{ color: theme.palette[`neutral-variant`].shade?.[70] }}
+                    sx={{ color: theme.palette.primary.shade?.[40] }}
                     icon={[`fab`, `linkedin`]}
                   />
                 </IconButton>
@@ -50,7 +50,7 @@ const Footer = ({ sx, classes, ...rootProps }: FooterProps) => {
               <Link href="https://twitter.com/JOBBHER_NO">
                 <IconButton /* sx={{ padding: 0 }} */>
                   <StyledIcon
-                    sx={{ color: theme.palette[`neutral-variant`].shade?.[70] }}
+                    sx={{ color: theme.palette.primary.shade?.[40] }}
                     icon={[`fab`, `twitter`]}
                   />
                 </IconButton>

@@ -87,7 +87,7 @@ const Home: NextPage = () => {
                     <IconButton>
                       <StyledIcon
                         sx={{
-                          color: theme.palette[`neutral-variant`].shade?.[80],
+                          color: theme.palette.primary.shade?.[40],
                         }}
                         icon={[`fab`, `linkedin`]}
                       />
@@ -97,7 +97,7 @@ const Home: NextPage = () => {
                     <IconButton /* sx={{ padding: 0 }} */>
                       <StyledIcon
                         sx={{
-                          color: theme.palette[`neutral-variant`].shade?.[70],
+                          color: theme.palette.primary.shade?.[40],
                         }}
                         icon={[`fab`, `twitter`]}
                       />
