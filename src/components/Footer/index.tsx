@@ -41,18 +41,12 @@ const Footer = ({ sx, classes, ...rootProps }: FooterProps) => {
               </Link>
               <Link href="https://linkedin.com/company/jobb-her-no">
                 <IconButton>
-                  <StyledIcon
-                    sx={{ color: theme.palette.primary.shade?.[40] }}
-                    icon={[`fab`, `linkedin`]}
-                  />
+                  <StyledIcon icon={[`fab`, `linkedin`]} />
                 </IconButton>
               </Link>
               <Link href="https://twitter.com/JOBBHER_NO">
                 <IconButton /* sx={{ padding: 0 }} */>
-                  <StyledIcon
-                    sx={{ color: theme.palette.primary.shade?.[40] }}
-                    icon={[`fab`, `twitter`]}
-                  />
+                  <StyledIcon icon={[`fab`, `twitter`]} />
                 </IconButton>
               </Link>
             </StyledSocialIconsBox>
