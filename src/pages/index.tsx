@@ -2,14 +2,10 @@ import * as React from 'react';
 import type { NextPage } from 'next';
 import {
   Box,
-  Button,
   Container,
-  Grid,
-  Hidden,
   IconButton,
   Link,
   Typography,
-  useMediaQuery,
   useTheme,
 } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,34 +15,11 @@ import { facebookList, TFbEl } from '../fb';
 import { StyledIcon } from '../styles';
 import 'react-multi-carousel/lib/styles.css';
 
-/* const fbGroupBg = require(`/jobbher-screenshot.jpg`); */
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
 const Home: NextPage = () => {
   const theme = useTheme();
 
   return (
-    <Page
-      title="Project Hardwork"
-      disableContainer
-      disableGutters
-      // containerProps={{ style: !isSmDown ? { paddingLeft: 0 } : undefined }}
-    >
+    <Page title="Jobb her: Fin din neste jobb" disableContainer disableGutters>
       <Box
         sx={{
           display: `flex`,

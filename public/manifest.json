@@ -4,8 +4,8 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Project Hardwork",
-    "short_name": "Hardwork",
+    "name": "Jobb her",
+    "short_name": "JobbHer",
     "icons": [
         {
             "src": "/icon-192x192.png",
