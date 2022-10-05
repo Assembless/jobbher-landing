@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   const theme = useTheme();
 
   return (
-    <Page title="Jobb her: Fin din neste jobb" disableContainer disableGutters>
+    <Page title="Jobb her: Finn din neste jobb" disableContainer disableGutters>
       <Box
         sx={{
           display: `flex`,
@@ -136,17 +136,17 @@ const Home: NextPage = () => {
           </Box>
         </Container>
       </Box>
-      <Box component="section" sx={{ padding: `72px 0 72px 0` }}>
+      <Box component="section" sx={{ padding: `72px 0 120px 0` }}>
         <Typography
           sx={{
-            fontSize: `20px`,
+            fontSize: `32px`,
             color: theme.palette.primary.shade?.[30],
             textAlign: `center`,
             marginBottom: `16px`,
-            fontWeight: 500,
+            fontWeight: 600,
           }}
         >
-          For nå kan du følge oss på
+          Enn så lenge kan du følge oss på
         </Typography>
         <Carousel
           additionalTransfrom={0}

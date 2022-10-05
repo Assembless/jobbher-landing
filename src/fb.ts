@@ -177,10 +177,6 @@ export const facebookList: TFbEl[] = [
     url: `https://www.facebook.com/groups/536085411304898/`,
   },
   {
-    name: `Jobb her i Konsberg`,
-    url: `https://www.facebook.com/groups/2705454729591567/`,
-  },
-  {
     name: `Jobb her i Kongsberg`,
     url: `https://www.facebook.com/groups/1611347202591823/`,
   },
@@ -269,3 +265,4 @@ export const facebookList: TFbEl[] = [
     url: `https://www.facebook.com/groups/4035942376446359/`,
   },
 ];
+
