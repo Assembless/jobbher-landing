@@ -265,4 +265,3 @@ export const facebookList: TFbEl[] = [
     url: `https://www.facebook.com/groups/4035942376446359/`,
   },
 ];
-

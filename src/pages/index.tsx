@@ -136,13 +136,13 @@ const Home: NextPage = () => {
           </Box>
         </Container>
       </Box>
-      <Box component="section" sx={{ padding: `72px 0 120px 0` }}>
+      <Box component="section" sx={{ padding: `96px 0 120px 0` }}>
         <Typography
           sx={{
             fontSize: `32px`,
             color: theme.palette.primary.shade?.[30],
             textAlign: `center`,
-            marginBottom: `16px`,
+            marginBottom: `32px`,
             fontWeight: 600,
           }}
         >
