@@ -6,8 +6,6 @@ export const StyledRoot = styled(Box)(() => ({
   userSelect: `none`,
 }));
 
-export const StyledMessage = styled(Typography)(() => ({
-  fontFamily: `'Poppins', sans-serif`,
-  fontSize: `30px`,
-  fontWeight: `700`,
+export const StyledImg = styled(`img`)(() => ({
+  height: 30,
 }));

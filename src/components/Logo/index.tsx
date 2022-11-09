@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 // Project scoped imports
 
 // Module scoped imports
-import { StyledRoot, StyledMessage } from './styles';
+import { StyledRoot, StyledImg } from './styles';
 import { LogoProps } from './types';
 
 /**
@@ -24,14 +24,7 @@ const Logo = ({ sx, classes, ...rootProps }: LogoProps) => {
       onClick={() => router.replace(`/`)}
       {...rootProps}
     >
-      <StyledMessage className={classes?.message}>
-        <span style={{ color: theme.palette.primary.shade?.[50] }}>
-          JOBBHER
-        </span>
-        <span style={{ color: theme.palette[`neutral-variant`].shade?.[70] }}>
-          .no
-        </span>
-      </StyledMessage>
+      <StyledImg src="/g8.svg" />
     </StyledRoot>
   );
 };
